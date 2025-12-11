@@ -1,0 +1,302 @@
+# HTML
+
+- Introduction to HTML
+- Different Tags
+
+
+# What is HTML?
+HTML is the standard markup langugage for creating web page
+HTML elements are the building blocks of HTML page and which are represented by Tags
+So browser do not display the html tags but use them to render the content of the page
+
+Let see with example
+<html>
+<HTML>
+
+html is not case sensitive which means we are free to use any case eithr 
+uppercase or lowercase or title case
+but try to stick any prefered case
+
+
+<!DOCTYPE html> declaration defines this document to be HTML5
+<HTML> element is the root element of any html page
+<head> element contains meta information about the document
+<title> element specifies a title for the document which you can see on browser tab
+<body> element contains the visible page content of the document
+<h1> element define a large heading or most important content of the document
+<p> element define a paragraph
+
+
+# The <!DOCTYPE> declaration
+> The <!DOCTYPE> declaration represent the document type and hlp the browser to display
+web page correctly
+> It must only appear once at the top page (before html tag)
+> The <!DOCTYPE> declaration is not case sensitive
+> The <!DOCTYPE> declaration for HTML 5 is
+
+<!DOCTYPE html>
+
+however there are mny other declaration type which we can use in html document
+depending upon what version of html is beign used
+
+
+# HTML Version
+since the early days of the web there have been many version of HTML
+
+Html 1.0
+html 2.0
+html 3.2
+html 4
+html 5 --- 2014
+
+<tag>   --- opening tags
+</tag>  --- closing tags
+
+there is one other type of tag know as self closing or empty tags
+
+<tag /> 
+example: <img />  <br />  <hr />
+
+Attributes
+are use to provide some additional information with the elements
+different attributes are used with different html tags
+for example:
+img - src attribute which provide information of the image source
+a - href - hyper reference provide the url of the destination
+
+
+
+# HTML Heading
+HTML heading are define with <h1> to <h6> tag
+<h1> define the most important heading
+<h6> define the least important heading
+<h1>This is heading</h1>
+<h2>This is heading</h2>
+<h3>This is heading</h3>
+<h4>This is heading</h4>
+<h5>This is heading</h5>
+<h6>This is heading</h6>
+
+> it automatically format your text into bold and bigger font which is also usefull
+to understand visually
+> For SEO purpose also heading tag plays an important role becaise all the web crawler
+read these tags
+
+
+# HTML Paragraph
+<p>
+HTML paragraph are define with <p> tag
+It we want to split our content in paragraph we can use <p> tag
+It automatically add a line break and space
+
+Example:
+<p>This is my parapraph</p>
+<p>This is my other parapraph</p>
+
+not like any word document you can manage intent buy presing space or tab key
+as the browser  will remove any extra space and extra line when page is displayed
+
+# HTML Line Break
+<br> - break rule
+When we use <br> element anything folling will start from next line
+THis tag is an example of any empty element where we do not need opeining and closing tags
+as there is  nothing to go in between them
+
+the <br /> tag has a space betwen the character br and forward slash 
+If we omit the space, older browser will have trouble rendering the line break
+while if we miss / and use just <br> it is not a valid in xhtml
+
+
+# HTML Horizontal Line
+<hr /> - Horizontal Rule
+> Horizontal line are use to visually break up section of a document
+> The <hr> tag to create a line from current position in the document 
+to the right margin and break the line accordingly
+> Again <hr /> tag is an example of empty or self closing element where we 
+do not need opeining and closing as there is nothing to go in between
+
+
+# <center>
+Centering contant
+we can use <center> tag to put content in the center of the page
+
+
+# <pre>
+Preserve formating
+> some time we want that our text to follow the exact format of how it is written
+in the HTML document in that case we can use pre formatterd tag <pre>
+
+exmaple:
+function testFunction(parameter){
+    alert(parameter)
+}
+
+> any text betwen the opening <pre> tag and closing will preserve the formatting
+of the source document
+
+
+# HTML Links
+HTML link are define with <a> tag or anchor tag which basically use for
+navigation purpose so we can refer to any page inside our root folder or any
+other external or internal URL
+
+> If we want to open in new tab we can use another attribite in anchor tag
+target="blank"
+
+> we can also create a single page web app using <a> tag where we can scroll up and 
+down based on user selection in that we have to use
+
+<a href="#section1">Section 1</a>
+
+<div id="section1">
+</div>
+
+example:
+<a href="">Click</a>
+
+
+# HTML Images
+HTML images are define with <img> tag
+again img tag is also an self closing or empty tag
+we can use couple attribute along with img tag to define image source
+
+src - source or source of the image 
+title - text which will appear on tooltip
+alt - alternative text which will appear if for some reason there 
+      is some error and image not found
+
+example:
+<img src="" title="" alt=""/>
+alt is important for image optimization in SEO as we can take this as an 
+opportunity to use alt tag to add our seach keyword
+
+image format
+jpg / jpeg
+gif
+png
+
+png vs jpg
+png fomrat we use for transparent background
+
+
+# HTML List
+HTML list are define with <ul> or <ol> tags
+<ul>  - unordered list / bullet list
+<ol> - ordered list / numbered list
+
+followed by <li> tag which is know as list item
+
+unordered list
+. item 1
+. item 2
+. item 3
+
+order list
+1. item 1
+2. item 2
+3. item 3
+
+
+in unordered list we can chnage or choose list item marker
+the css list-style property is used to define the style of the list item marker
+
+disc - default
+circle
+square
+none
+
+
+# HTML Formatting tag 
+HTML provides different tag for framtting the content
+
+<b>
+<i>
+<strong>
+<em>
+<mark>
+<small>
+<del>
+
+
+# HTML Table
+HTML table to create a table on web page to display some data
+this is one of the most used html element in the application
+To create a table we have to use series of tags
+<table> - parent block
+<tr> - table row
+<th> - table heading
+<td> - table data / table cell
+
+border attribute if you want to add default border for the table
+
+colspan="2" - merge column where 2 is a number of column you want to merge
+rowspan="2" - merge row where 2 is a number of row you want to merge
+
+
+# HTML Forms
+Forms are the essential part of any application as form can use to take the
+input from the user
+Forms are the one which are use by the user to interact with your application
+
+In a form we can create different type element to accept values
+
+textbox
+dropdrowList
+checkbox
+radioButton
+buttons
+textarea
+
+<input> which can be use to create textbox, radio, checkbox, button
+<select> which can use to create dropdown
+
+<input>
+textbox - text
+textbox - password
+radio
+checkbox
+submit button
+
+<input type="text" />
+placeholder - kind of watermark which will disappear when enter a value
+readonly - make textbox uneditable
+type - define what kind of textbox you want to create text/password
+name - to provide a name which we will use to acess value
+id - to provide unique id for textbox
+
+> dropdown
+To create a drop down we will use 
+<select>
+<option>
+drop down list is use to provide multiple options to the user where user can 
+make a single selection
+
+
+> CheckBox vs RadioButton
+
+radio - single selection (eg: gender)
+checkbox - multiple selection (eg: interest)
+
+<input type="radio" value=""/>
+<input type="checkbox" />
+
+when ever we create a radiobutton we also have to provide a corresponding value
+
+> buttons
+Button are important to handle events
+we can create different type of button
+we can also have button outside forms for some other purpose
+
+type of button
+- button
+- submit
+- reset
+
+
+
+
+
+
+
+
+
